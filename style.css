@@ -1,0 +1,622 @@
+/* Variables de Color    */
+/* --------------------- */
+:root {
+    --primary-color: #004aad; /* Azul Bootstrap */
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --danger-color: #dc3545;
+    --whatsapp-color: #25D366;
+    --whatsapp-hover: #128C7E;
+    --fade-in-duration: 0.5s;
+}
+
+/* --------------------- */
+/* Estilos Generales     */
+/* --------------------- */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* --------------------- */
+/* Navbar Moderna        */
+/* --------------------- */
+
+/* Estilos específicos para el navbar en index.html */
+
+.navbar-index .nav-link {
+    color: white; /* Texto negro */
+}
+
+.navbar-index .nav-link:hover,
+.navbar-index .nav-link.active {
+    color: #000000; /* Texto negro en hover y en enlace activo */
+    background-color: #ffffff; /* Fondo blanco en hover y en enlace activo */
+}
+
+.navbar-index .navbar-toggler {
+    border-color: #000000; /* Borde negro para el toggler */
+}
+
+.navbar-index .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /* Icono del toggler en negro */
+}
+
+/* Estilos generales para el navbar */
+.navbar {
+    padding: 1rem 2rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+/* Espaciado entre los elementos del menú */
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para enlaces en navbar-light */
+.navbar-light .nav-link {
+    color: #000000;
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+/* Estilos para enlaces en navbar-dark */
+.navbar-dark .nav-link {
+    color: black;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+/* Ajustes para el botón toggler */
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23${encodeURIComponent('#ffffff')}' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Toggle Button */
+.navbar-toggler {
+    border-color: var(--light-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos para el toggler negro */
+.navbar-toggler.custom-toggler-black {
+    border-color: #000; /* Borde negro */
+}
+
+.navbar-toggler.custom-toggler-black .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler.custom-toggler-black:hover {
+    border-color: #007bff; /* Borde azul al hacer hover */
+}
+
+.navbar-toggler.custom-toggler-black .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23007bff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilo específico para los enlaces del menú de navegación en páginas con fondo blanco */
+.navbar-dark ul li a {
+    color: #333; /* Color del texto inicial en oscuro */
+}
+
+/* Efecto hover específico para los enlaces del menú de navegación en páginas con fondo blanco */
+.navbar-dark ul li a:hover {
+    color: #fff; /* Color del texto al pasar el ratón */
+    background-color: #333; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes del producto */
+/* Estilos para la animación de zoom en la imagen */
+.product-image-container img {
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.product-image-container img:hover {
+    transform: scale(1.1); /* Zoom hacia afuera */
+}
+
+/* Estilos específicos para el navbar en product_detail.html */
+.navbar-product-detail .nav-link {
+    color: #000000; /* Texto negro */
+}
+
+.navbar-product-detail .nav-link:hover,
+.navbar-product-detail .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+.navbar-product-detail .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /* Icono del toggler en negro */
+}
+
+/* Ajustes de padding para la información del producto en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .product-info {
+        padding: 1rem;
+    }
+}
+
+/* Estilos para añadir divisores entre los enlaces del menú desplegable en móviles */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea divisoria */
+    }
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none; /* Elimina la línea del último enlace */
+    }
+}
+/* --------------------- */
+/* Footer Moderno        */
+/* --------------------- */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer .list-unstyled {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .list-unstyled li {
+    margin: 0 15px;
+}
+
+.footer .list-unstyled li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.footer .list-unstyled li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .list-unstyled li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer .list-unstyled li a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+}
+
+/* Imagen del Footer */
+.footer img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* --------------------- */
+/* Botones Personalizados */
+/* --------------------- */
+
+/* Botón WhatsApp */
+.whatsapp-btn {
+    background-color: var(--whatsapp-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: var(--whatsapp-hover);
+    transform: scale(1.05);
+}
+
+/* Botón "Ver más productos" */
+.view-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* --------------------- */
+/* Filtros de Categorías */
+/* --------------------- */
+#category-filters {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Botones de filtro */
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: height 0.3s ease, top 0.3s ease;
+}
+
+
+/* Contador de Categoría */
+#category-counter {
+    font-size: 1.1rem;
+}
+
+#category-counter .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Diseño actualizado para el contador de categorías */
+#category-counter .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#category-counter .card-body {
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+#category-counter .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#category-counter .card-text {
+    font-size: 1.2rem;
+}
+
+/* Diseño mejorado para los botones de categorías */
+.filter-btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 576px) {
+    #category-counter .card-body {
+        padding: 15px;
+    }
+
+    #category-counter .card-title {
+        font-size: 1.3rem;
+    }
+
+    #category-counter .card-text {
+        font-size: 1rem;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Scroll Personalizado para Filtros en Pantallas Pequeñas */
+@media (max-width: 767.98px) {
+    #category-filters {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------- */
+/* Tarjetas de Productos y Ofertas */
+/* --------------------- */
+.product-item, .offer-item, .category-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    animation: fadeIn var(--fade-in-duration) ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover, .offer-item:hover, .category-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Etiquetas de Oferta */
+.offer-badge {
+    background-color: var(--danger-color);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: bounce 1s infinite;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* --------------------- */
+/* Categorías Destacadas */
+/* --------------------- */
+.category-card {
+    overflow: hidden;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.category-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-card:hover .category-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.category-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+/* --------------------- */
+/* Buscador               */
+/* --------------------- */
+#search-input {
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* --------------------- */
+/* Alertas                 */
+/* --------------------- */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* --------------------- */
+/* Responsividad Adicional  */
+/* --------------------- */
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .whatsapp-btn, .view-more-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .rating i {
+        margin-right: 1px;
+    }
+
+    /* Reducir tamaño de fuentes en botones de filtro */
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Ajustar títulos de categorías */
+    .category-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* --------------------- */
+/* Otras Personalizaciones */
+/* --------------------- */
+
+/* Estilos para las estrellas de calificación */
+.rating i {
+    color: #ffc107; /* Color amarillo para estrellas llenas */
+    margin-right: 2px;
+}
+
+/* Estilo para el contorno del párrafo */
+/* Estilo para el contorno del texto */
+.contorno {
+    
+    color: #004aad; /* Color del texto */
+    text-shadow: 
+        -2px -2px 0 white, 
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white; /* Contorno azul alrededor del texto */
+}
+
+.contornored{
+    
+    color:red; /* Color del texto */
+    text-shadow: 
+        -2px -2px 0 white, 
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white; /* Contorno azul alrededor del texto */
+}
+
+/* Estilo para las líneas divisorias en el footer */
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria con color blanco semitransparente */
+    margin: 20px 0; /* Espaciado vertical alrededor de la línea */
+}
+
+/* Estilo para títulos en negrita y subrayados */
+.titulo-negrita-subrayado {
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Efecto de transición para las tarjetas */
+.product-item, .offer-item, .category-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
