@@ -1468,7 +1468,7 @@
         "Precio": "S/30.00",
         "Categoria": "Neon",
         "Onsale": false,
-        "image": "images/productos/NEON/NEON.png"
+        "image": "images/productos/NEON/NEON CELESTE.png"
     },
     {
         "Codigo": "NR.05",
@@ -1481,7 +1481,7 @@
         "Precio": "S/30.00",
         "Categoria": "Neon",
         "Onsale": false,
-        "image": "images/productos/NEON/NEON CELESTE.png"
+        "image": "images/productos/NEON/NEON ROSADO.png"
     },
     {
         "Codigo": "NAZ.04",
@@ -1845,7 +1845,7 @@
         "Precio": "S/23.00",
         "Categoria": "Fuentes",
         "Onsale": false,
-        "image": "images/productos/FUENTES/FUENTE 12V 10A PLASTICO.png"
+        "image": "images/productos/FUENTES/FUENTE 12V 5A PLASTICO.png"
     },
     {
         "Codigo": "A.22",
