@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a las páginas principales
+Allow: /index.html
+Allow: /products.html
+Allow: /product_detail.html
+Allow: /about.html
+Allow: /contact.html
+
+# Permitir acceso a archivos estáticos
+Allow: /images/
+Allow: /js/
+Allow: /*.css
+
+# Desallowar archivos que no queremos que se indexen
+Disallow: /*.json
+
+# Tiempo de espera entre solicitudes (en segundos)
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://leddigitalperu.com/sitemap.xml
