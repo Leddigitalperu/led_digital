@@ -1,0 +1,1543 @@
+/* Variables de Color    */
+/* --------------------- */
+:root {
+    --primary-color: #004aad; /* Azul Bootstrap */
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --danger-color: #dc3545;
+    --whatsapp-color: #25D366;
+    --whatsapp-hover: #128C7E;
+    --fade-in-duration: 0.5s;
+}
+
+/* --------------------- */
+/* Estilos Generales     */
+/* --------------------- */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* --------------------- */
+/* Navbar Moderna        */
+/* --------------------- */
+
+/* Estilos específicos para el navbar en index.html */
+
+.navbar-index .nav-link {
+    color: white; /* Texto negro */
+}
+
+.navbar-index .nav-link:hover,
+.navbar-index .nav-link.active {
+    color: #000000; /* Texto negro en hover y en enlace activo */
+    background-color: #ffffff; /* Fondo blanco en hover y en enlace activo */
+}
+
+.navbar-index .navbar-toggler {
+    border-color: #000000; /* Borde negro para el toggler */
+}
+
+.navbar-index .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /* Icono del toggler en negro */
+}
+
+/* Estilos generales para el navbar */
+.navbar {
+    padding: 1rem 2rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+/* Espaciado entre los elementos del menú */
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para enlaces en navbar-light */
+.navbar-light .nav-link {
+    color: #000000;
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+/* Estilos para enlaces en navbar-dark */
+.navbar-dark .nav-link {
+    color: black;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+/* Ajustes para el botón toggler */
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23${encodeURIComponent('#ffffff')}' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Toggle Button */
+.navbar-toggler {
+    border-color: var(--light-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos para el toggler negro */
+.navbar-toggler.custom-toggler-black {
+    border-color: #000; /* Borde negro */
+}
+
+.navbar-toggler.custom-toggler-black .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler.custom-toggler-black:hover {
+    border-color: #007bff; /* Borde azul al hacer hover */
+}
+
+.navbar-toggler.custom-toggler-black .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23007bff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilo específico para los enlaces del menú de navegación en páginas con fondo blanco */
+.navbar-dark ul li a {
+    color: #333; /* Color del texto inicial en oscuro */
+}
+
+/* Efecto hover específico para los enlaces del menú de navegación en páginas con fondo blanco */
+.navbar-dark ul li a:hover {
+    color: #fff; /* Color del texto al pasar el ratón */
+    background-color: #333; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes del producto */
+/* Estilos para la animación de zoom en la imagen */
+.product-image-container img {
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.product-image-container img:hover {
+    transform: scale(1.1); /* Zoom hacia afuera */
+}
+
+/* Estilos específicos para el navbar en product_detail.html */
+.navbar-product-detail .nav-link {
+    color: #000000; /* Texto negro */
+}
+
+.navbar-product-detail .nav-link:hover,
+.navbar-product-detail .nav-link.active {
+    color: #ffffff; /* Texto blanco en hover y en enlace activo */
+    background-color: var(--primary-color); /* Fondo azul en hover y en enlace activo */
+    border-radius: 5px;
+}
+
+.navbar-product-detail .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000000' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /* Icono del toggler en negro */
+}
+
+/* Ajustes de padding para la información del producto en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .product-info {
+        padding: 1rem;
+    }
+}
+
+/* Estilos para añadir divisores entre los enlaces del menú desplegable en móviles */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea divisoria */
+    }
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none; /* Elimina la línea del último enlace */
+    }
+}
+/* --------------------- */
+/* Footer Moderno        */
+/* --------------------- */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer .list-unstyled {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .list-unstyled li {
+    margin: 0 15px;
+}
+
+.footer .list-unstyled li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.footer .list-unstyled li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .list-unstyled li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer .list-unstyled li a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+}
+
+/* Imagen del Footer */
+.footer img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* --------------------- */
+/* Botones Personalizados */
+/* --------------------- */
+
+/* Botón WhatsApp */
+.whatsapp-btn {
+    background-color: var(--whatsapp-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: var(--whatsapp-hover);
+    transform: scale(1.05);
+}
+
+/* Botón "Ver más productos" */
+.view-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* --------------------- */
+/* Filtros de Categorías */
+/* --------------------- */
+#category-filters {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Botones de filtro */
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: height 0.3s ease, top 0.3s ease;
+}
+
+
+/* Contador de Categoría */
+#category-counter {
+    font-size: 1.1rem;
+}
+
+#category-counter .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Diseño actualizado para el contador de categorías */
+#category-counter .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#category-counter .card-body {
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+#category-counter .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#category-counter .card-text {
+    font-size: 1.2rem;
+}
+
+/* Diseño mejorado para los botones de categorías */
+.filter-btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 576px) {
+    #category-counter .card-body {
+        padding: 15px;
+    }
+
+    #category-counter .card-title {
+        font-size: 1.3rem;
+    }
+
+    #category-counter .card-text {
+        font-size: 1rem;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Scroll Personalizado para Filtros en Pantallas Pequeñas */
+@media (max-width: 767.98px) {
+    #category-filters {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------- */
+/* Tarjetas de Productos y Ofertas */
+/* --------------------- */
+.product-item, .offer-item, .category-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    animation: fadeIn var(--fade-in-duration) ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover, .offer-item:hover, .category-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* --------------------- */
+/* Filtro minimalista (icono embudo) */
+/* --------------------- */
+/* Ajusta el contenedor del dropdown cuando vive dentro del input-group */
+.input-group #category-filters {
+    margin: 0;
+    display: inline-block;
+}
+
+/* Botón de filtro: estilo minimalista */
+#category-filters .btn {
+    --border: #e5e7eb;
+    --hover-bg: #f8fafc;
+    --text: #475569;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.5rem;
+    line-height: 1;
+}
+
+#category-filters .btn:hover {
+    background: var(--hover-bg);
+    border-color: #d1d5db;
+    color: #0f172a;
+}
+
+#category-filters .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 74, 173, 0.15);
+    border-color: #b6cff7;
+}
+
+/* Menú del dropdown: bordes suaves y sombra ligera */
+#category-filters .dropdown-menu {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Items compactos y con hover sutil */
+#category-filters .dropdown-item {
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.375rem;
+    color: #0f172a;
+}
+
+#category-filters .dropdown-item:hover {
+    background: #f1f5f9;
+}
+
+/* Activo con fondo tenue y check a la derecha */
+#category-filters .dropdown-item.active,
+#category-filters .dropdown-item.active:focus,
+#category-filters .dropdown-item.active:hover {
+    background: #eef2ff;
+    color: #004aad;
+    font-weight: 600;
+    position: relative;
+}
+
+#category-filters .dropdown-item.active::after {
+    content: "✓";
+    position: absolute;
+    right: 0.5rem;
+    color: #004aad;
+    font-weight: 700;
+}
+
+/* Carrusel de Ofertas */
+#offers-carousel {
+    position: relative;
+    width: 100%;
+    overflow: visible; /* Permite que las flechas salgan hacia afuera sin recortarse */
+}
+
+#offers-carousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    min-height:10px;
+}
+
+#offers-carousel .carousel-item {
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 0;
+    min-height: inherit;
+}
+
+#offers-carousel .carousel-item.active {
+    display: block;
+}
+
+/* Animación de fade para el carrusel */
+@keyframes fadeInCarousel {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#offers-carousel .carousel-item {
+    animation: fadeInCarousel 0.6s ease-in-out;
+}
+
+#offers-carousel .carousel-control-prev,
+#offers-carousel .carousel-control-next {
+    z-index: 10;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(0, 74, 173, 0.85);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#offers-carousel .carousel-control-prev:hover,
+#offers-carousel .carousel-control-next:hover {
+    background: rgba(0, 74, 173, 1);
+    box-shadow: 0 4px 12px rgba(0, 74, 173, 0.4);
+    transform: translateY(-50%) scale(1.05);
+}
+
+#offers-carousel .carousel-control-prev { left: -36px; }
+#offers-carousel .carousel-control-next { right: -36px; }
+
+@media (min-width: 768px) {
+    #offers-carousel .carousel-control-prev,
+    #offers-carousel .carousel-control-next {
+        top: 38%; /* un poco más arriba en pantallas medianas+ */
+    }
+    #offers-carousel .carousel-control-prev { left: -48px; }
+    #offers-carousel .carousel-control-next { right: -48px; }
+}
+
+@media (min-width: 1200px) {
+    #offers-carousel .carousel-control-prev { left: -64px; }
+    #offers-carousel .carousel-control-next { right: -64px; }
+    #offers-carousel .carousel-control-prev,
+    #offers-carousel .carousel-control-next { top: 37%; }
+}
+
+#offers-carousel .carousel-control-prev-icon,
+#offers-carousel .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 100% 100%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* --------------------- */
+/* Productos Nuevos      */
+/* --------------------- */
+.new-products-section {
+    background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 25%),
+                radial-gradient(circle at 80% 10%, rgba(255,255,255,0.06), transparent 30%),
+                linear-gradient(135deg, #0a1c3f 0%, #031026 100%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.new-products-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.new-products-section h2 {
+    color: #ffffff;
+}
+
+#new-products-carousel .carousel-item {
+    padding: 0.5rem 0;
+}
+
+#new-products-carousel {
+    position: relative;
+    padding-bottom: 2.5rem; /* espacio extra para las burbujas debajo */
+}
+
+.new-product-card {
+    background: linear-gradient(160deg, rgba(255,255,255,0.08) 0%, rgba(122,215,255,0.08) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1rem;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 520px;
+}
+
+.new-product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.new-product-card img {
+    height: 420px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0.75rem;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 45%);
+}
+
+.new-product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.new-product-card .card-title {
+    font-weight: 700;
+}
+
+.new-product-card .card-text {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+}
+
+.new-product-price {
+    font-weight: 700;
+    color: #7ad7ff;
+    font-size: 1.05rem;
+}
+
+.btn-new-product {
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #ffffff;
+    background: rgba(255,255,255,0.06);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-new-product:hover {
+    background: #7ad7ff;
+    color: #031026;
+    border-color: #7ad7ff;
+}
+
+.new-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: linear-gradient(135deg, #ffde59, #ffb347);
+    color: #2d1a00;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    text-transform: uppercase;
+}
+
+.location-new-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
+    line-height: 1;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.new-products-section .carousel-control-prev,
+.new-products-section .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(6px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.new-products-section .carousel-control-prev:hover,
+.new-products-section .carousel-control-next:hover {
+    background: rgba(255,255,255,0.22);
+}
+
+.new-products-section .carousel-control-prev-icon,
+.new-products-section .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.new-products-section .carousel-control-prev { left: -4.25rem; }
+.new-products-section .carousel-control-next { right: -4.25rem; }
+
+@media (max-width: 767.98px) {
+    .new-products-section .carousel-control-prev { left: -1.75rem; }
+    .new-products-section .carousel-control-next { right: -1.75rem; }
+}
+
+.new-products-indicators {
+    position: absolute;
+    bottom: -1.1rem;
+    left: 30%;
+    transform: translateX(-30%);
+    width: auto;
+    gap: 0.35rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    pointer-events: none; /* evita desplazar por padding; los botones reactivan eventos */
+}
+
+.new-products-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.25);
+    transition: all 0.2s ease;
+    pointer-events: auto;
+}
+
+.new-products-indicators .active {
+    background: #7ad7ff;
+    border-color: #7ad7ff;
+    transform: scale(1.1);
+}
+
+/* --------------------- */
+/* Sección Marca (dorado) */
+/* --------------------- */
+.brand-section {
+    background: radial-gradient(circle at 20% 20%, rgba(255,215,128,0.08), transparent 45%),
+                radial-gradient(circle at 80% 10%, rgba(255,180,82,0.08), transparent 40%),
+                linear-gradient(145deg, #0f0c08 0%, #1a130c 50%, #0c0906 100%);
+    color: #f7e7c6;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-section::before,
+.brand-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 110px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.brand-section::before {
+    top: 0;
+    background: linear-gradient(180deg, rgba(251,210,106,0.18), rgba(0,0,0,0));
+}
+
+.brand-section::after {
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(251,210,106,0.14), rgba(0,0,0,0));
+}
+
+.brand-title {
+    color: #fbd26a;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.brand-kicker {
+    color: #c7a252;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.brand-subtitle {
+    color: rgba(247, 231, 198, 0.8);
+}
+
+.btn-brand-outline {
+    border: 1px solid rgba(251, 210, 106, 0.8);
+    color: #fbd26a;
+    background: transparent;
+    border-radius: 999px;
+    padding: 0.45rem 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-brand-outline:hover {
+    background: rgba(251, 210, 106, 0.15);
+    color: #fff;
+}
+
+#brand-carousel {
+    position: relative;
+    padding-bottom: 2.75rem;
+}
+
+#brand-carousel .carousel-item {
+    padding: 0.75rem 0;
+}
+
+.brand-card {
+    background: linear-gradient(150deg, rgba(255,215,128,0.12) 0%, rgba(20,14,10,0.9) 45%, rgba(0,0,0,0.8) 100%);
+    border: 1px solid rgba(251, 210, 106, 0.35);
+    border-radius: 1.1rem;
+    color: #f7e7c6;
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 580px;
+}
+
+.brand-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.55);
+    border-color: rgba(251, 210, 106, 0.6);
+}
+
+.brand-card img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0.5rem;
+    background: linear-gradient(180deg, rgba(251,210,106,0.12), rgba(0,0,0,0));
+}
+
+.brand-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.brand-card .card-title {
+    font-weight: 800;
+    color: #fbd26a;
+}
+
+.brand-card .card-text {
+    color: rgba(247, 231, 198, 0.82);
+    font-size: 0.96rem;
+}
+
+.brand-price {
+    font-weight: 800;
+    color: #ffd67f;
+    font-size: 1.05rem;
+}
+
+.btn-brand {
+    border: 1px solid rgba(251,210,106,0.7);
+    color: #0f0c08;
+    background: linear-gradient(120deg, #ffd67f, #f6c34a);
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.btn-brand:hover {
+    background: linear-gradient(120deg, #ffdf9a, #ffd067);
+    color: #0f0c08;
+}
+
+.brand-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: linear-gradient(135deg, #ffefc2, #f6c34a);
+    color: #0f0c08;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 0.6px;
+    box-shadow: 0 12px 22px rgba(0,0,0,0.28);
+    text-transform: uppercase;
+}
+
+.brand-section .carousel-control-prev,
+.brand-section .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd67f, #f6c34a);
+    border: 1px solid rgba(251, 210, 106, 0.6);
+    box-shadow: 0 4px 12px rgba(246, 195, 74, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+}
+
+.brand-section .carousel-control-prev:hover,
+.brand-section .carousel-control-next:hover {
+    background: linear-gradient(135deg, #ffdf9a, #ffd067);
+    box-shadow: 0 6px 16px rgba(246, 195, 74, 0.45);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.brand-section .carousel-control-prev-icon,
+.brand-section .carousel-control-next-icon {
+    filter: brightness(0) saturate(100%);
+}
+
+.brand-section .carousel-control-prev { left: -4rem; }
+.brand-section .carousel-control-next { right: -4rem; }
+
+@media (max-width: 767.98px) {
+    .brand-section .carousel-control-prev { left: -1.5rem; }
+    .brand-section .carousel-control-next { right: -1.5rem; }
+}
+
+.brand-indicators {
+    position: absolute;
+    bottom: -1.2rem;
+    left: 30%;
+    transform: translateX(-30%);
+    gap: 0.35rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.brand-indicators [data-bs-target] {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid rgba(251, 210, 106, 0.9);
+    background: rgba(251, 210, 106, 0.35);
+    transition: all 0.2s ease;
+    pointer-events: auto;
+}
+
+.brand-indicators .active {
+    background: #fbd26a;
+    border-color: #fbd26a;
+    transform: scale(1.05);
+}
+
+@media (max-width: 767.98px) {
+    .brand-card {
+        min-height: 480px;
+    }
+    .brand-card img {
+        height: 260px;
+    }
+}
+
+/* --------------------- */
+/* Hero Cotiza Carousel  */
+/* --------------------- */
+.cotiza-hero {
+    position: relative;
+    min-height: 360px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cotiza-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 74, 173, 0.72), rgba(0, 74, 173, 0.45));
+}
+
+.cotiza-caption {
+    position: relative;
+    z-index: 1;
+    max-width: 520px;
+}
+
+.cotiza-kicker {
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #ff0000;
+}
+
+.cotiza-title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.cotiza-subtitle {
+    font-size: 1.05rem;
+    color: #e7f1ff;
+}
+
+.hero-carousel .carousel-inner {
+    position: relative;
+}
+
+.hero-carousel .carousel-item {
+    min-height: 360px;
+    padding-bottom: 2.5rem;
+}
+
+.hero-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.hero-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.4);
+    opacity: 1;
+}
+
+.hero-indicators .active {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .cotiza-hero {
+        min-height: 300px;
+    }
+    .cotiza-title {
+        font-size: 1.6rem;
+    }
+    .cotiza-caption {
+        max-width: 100%;
+    }
+}
+
+.hero-slide {
+    background-color: #004aad;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    #new-products-carousel .carousel-item {
+        padding: 0;
+    }
+    .new-product-card img {
+        height: 280px;
+    }
+}
+
+/* Tarjetas de oferta con animación */
+.oferta-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.oferta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.oferta-card .card-img-top {
+    object-fit: cover;
+    height: 420px;
+}
+
+.oferta-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Etiquetas de Oferta */
+.offer-badge {
+    background-color: var(--danger-color);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: bounce 1s infinite;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* --------------------- */
+/* Categorías Destacadas */
+/* --------------------- */
+.category-card {
+    overflow: hidden;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.category-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-card:hover .category-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.category-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+/* --------------------- */
+/* Buscador               */
+/* --------------------- */
+#search-input {
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* --------------------- */
+/* Alertas                 */
+/* --------------------- */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* --------------------- */
+/* Responsividad Adicional  */
+/* --------------------- */
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .whatsapp-btn, .view-more-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .rating i {
+        margin-right: 1px;
+    }
+
+    /* Reducir tamaño de fuentes en botones de filtro */
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Ajustar títulos de categorías */
+    .category-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* --------------------- */
+/* Otras Personalizaciones */
+/* --------------------- */
+
+/* Estilos para las estrellas de calificación */
+.rating i {
+    color: #ffc107; /* Color amarillo para estrellas llenas */
+    margin-right: 2px;
+}
+
+/* Estilo para el contorno del párrafo */
+/* Estilo para el contorno del texto */
+.contorno {
+    
+    color: #004aad; /* Color del texto */
+    text-shadow: 
+        -2px -2px 0 white, 
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white; /* Contorno azul alrededor del texto */
+}
+
+.contornored{
+    
+    color:red; /* Color del texto */
+    text-shadow: 
+        -2px -2px 0 white, 
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white; /* Contorno azul alrededor del texto */
+}
+
+/* Estilo para las líneas divisorias en el footer */
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria con color blanco semitransparente */
+    margin: 20px 0; /* Espaciado vertical alrededor de la línea */
+}
+
+/* Estilo para títulos en negrita y subrayados */
+.titulo-negrita-subrayado {
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Efecto de transición para las tarjetas */
+.product-item, .offer-item, .category-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Reducir el espacio en la sección de ofertas y productos */
+
+/* --------------------- */
+/* Nueva Sección de Local */
+/* --------------------- */
+.new-location-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.location-kicker {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #004aad;
+}
+
+.location-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.location-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.location-card {
+    background: linear-gradient(135deg, #004aad, #0056d2);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 74, 173, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-card-new {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.location-card-new .location-name,
+.location-card-new .location-address,
+.location-card-new .location-tag {
+    color: #ffffff;
+}
+
+.location-tag {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.location-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.3; }
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 74, 173, 0.35);
+}
+
+.location-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.location-icon i {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.location-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.location-name {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.location-address {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-location {
+    background: #ffffff;
+    color: #004aad;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-location:hover {
+    background: #f8f9fa;
+    color: #003b8a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.location-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.location-map-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 25px rgba(0, 74, 173, 0.15);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #004aad, #0056d2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feature-icon i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.feature-content h4 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .location-title {
+        font-size: 2rem;
+    }
+    
+    .location-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .feature-item {
+        padding: 1rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .feature-icon i {
+        font-size: 1.25rem;
+    }
+}
+
+section.py-5:has(#offers-carousel) {
+    padding-top: 10rem !important;
+    padding-bottom: 0.1rem !important;
+}
